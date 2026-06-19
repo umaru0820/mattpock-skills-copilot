@@ -1,18 +1,22 @@
 {
-  "name": "mattpock-skills-copilot",
-  "owner": {
-    "name": "umaru0820"
-  },
-  "metadata": {
-    "description": "Forked Matt Pocock skills tailored for GitHub Copilot",
-    "version": "1.0.0"
-  },
-  "plugins": [
-    {
-      "name": "mattpock-skills-copilot",
-      "description": "Lean set of Matt Pocock engineering skills adapted for GitHub Copilot",
-      "version": "1.0.0",
-      "source": "./skills"
-    }
+  "name": "mattpocock-skills",
+  "skills": [
+    "./skills/engineering/ask-matt",
+    "./skills/engineering/diagnosing-bugs",
+    "./skills/engineering/grill-with-docs",
+    "./skills/engineering/triage",
+    "./skills/engineering/improve-codebase-architecture",
+    "./skills/engineering/setup-matt-pocock-skills",
+    "./skills/engineering/tdd",
+    "./skills/engineering/to-issues",
+    "./skills/engineering/to-prd",
+    "./skills/engineering/prototype",
+    "./skills/engineering/domain-modeling",
+    "./skills/engineering/codebase-design",
+    "./skills/productivity/grill-me",
+    "./skills/productivity/grilling",
+    "./skills/productivity/handoff",
+    "./skills/productivity/teach",
+    "./skills/productivity/writing-great-skills"
   ]
 }
