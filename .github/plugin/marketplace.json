@@ -8,11 +8,22 @@
     "version": "1.0.0"
   },
   "plugins": [
-    {
-      "name": "mattpock-skills-copilot",
-      "description": "Lean set of Matt Pocock engineering skills adapted for GitHub Copilot",
-      "version": "1.0.0",
-      "source": "./skills"
-    }
+    { "name": "ask-matt", "source": "./skills/engineering/ask-matt" },
+    { "name": "diagnosing-bugs", "source": "./skills/engineering/diagnosing-bugs" },
+    { "name": "grill-with-docs", "source": "./skills/engineering/grill-with-docs" },
+    { "name": "triage", "source": "./skills/engineering/triage" },
+    { "name": "improve-codebase-architecture", "source": "./skills/engineering/improve-codebase-architecture" },
+    { "name": "setup-matt-pocock-skills", "source": "./skills/engineering/setup-matt-pocock-skills" },
+    { "name": "tdd", "source": "./skills/engineering/tdd" },
+    { "name": "to-issues", "source": "./skills/engineering/to-issues" },
+    { "name": "to-prd", "source": "./skills/engineering/to-prd" },
+    { "name": "prototype", "source": "./skills/engineering/prototype" },
+    { "name": "domain-modeling", "source": "./skills/engineering/domain-modeling" },
+    { "name": "codebase-design", "source": "./skills/engineering/codebase-design" },
+    { "name": "implement", "source": "./skills/engineering/implement" },
+    { "name": "resolving-merge-conflicts", "source": "./skills/engineering/resolving-merge-conflicts" },
+    { "name": "handoff", "source": "./skills/productivity/handoff" },
+    { "name": "teach", "source": "./skills/productivity/teach" },
+    { "name": "writing-great-skills", "source": "./skills/productivity/writing-great-skills" }
   ]
 }
