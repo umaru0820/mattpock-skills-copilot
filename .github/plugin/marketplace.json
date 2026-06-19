@@ -1,0 +1,18 @@
+{
+  "name": "mattpock-skills-copilot",
+  "owner": {
+    "name": "umaru0820"
+  },
+  "metadata": {
+    "description": "Forked Matt Pocock skills tailored for GitHub Copilot",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "mattpock-skills-copilot",
+      "description": "Lean set of Matt Pocock engineering skills adapted for GitHub Copilot",
+      "version": "1.0.0",
+      "source": "./skills"
+    }
+  ]
+}
