@@ -36,4 +36,5 @@ Initial Copilot-adapted baseline for this repository fork.
 - This changelog is reset for this adapted repository line and does not track upstream `mattpocock/skills` release history.
 
 ## v1.0.1
-- Test release (this will be deleted)
+- Versioning with **Github Actions** via **semsev** convention.
+- Released version (Eg. v.1.2.3) is saved to **Github Tags**.
