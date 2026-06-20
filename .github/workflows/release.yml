@@ -19,11 +19,13 @@ jobs:
   release:
     runs-on: ubuntu-latest
     steps:
+      # Download repository code and fetch full git history to access old version tags
       - name: Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
+      # Parse the latest semver tag (Eg. v1.2.3), bump it based on release_type, and output the next version
       - name: Compute next version
         id: version
         shell: bash
@@ -71,6 +73,7 @@ jobs:
           echo "next_version=${next_version}" >> "${GITHUB_OUTPUT}"
           echo "next_tag=${next_tag}" >> "${GITHUB_OUTPUT}"
 
+      # Require a changelog entry before releasing: fail unless CHANGELOG.md has a section for this version
       - name: Verify changelog heading
         shell: bash
         run: |
@@ -83,6 +86,7 @@ jobs:
             exit 1
           fi
 
+      # Create an annotated git tag locally and push it to GitHub (immutable marker for this release)
       - name: Create and push tag
         shell: bash
         run: |
@@ -91,6 +95,7 @@ jobs:
           git tag -a "${next_tag}" -m "Release ${next_tag}"
           git push origin "${next_tag}"
 
+      # Generate a GitHub Release page from the tag, auto-populating release notes from merged PRs
       - name: Create GitHub Release
         env:
           GH_TOKEN: ${{ github.token }}
