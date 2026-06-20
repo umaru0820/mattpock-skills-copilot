@@ -30,6 +30,6 @@ The repository is being refined to remove Claude-first naming and align skills t
   - `major`: bump to `X+1.0.0`
   - `minor`: bump to `X.Y+1.0`
   - `patch`: bump to `X.Y.Z+1`
-- The workflow reads the latest `v*` semver tag (or starts from `v0.0.0` if none exist), then creates and pushes the next immutable `v<next>` tag and a GitHub Release.
+- The workflow reads the latest `v*` semver tag (or starts from `v1.0.0` if none exist), then creates and pushes the next immutable `v<next>` tag and a GitHub Release.
 - Before tagging, it requires a matching changelog heading in `CHANGELOG.md`: `## v<next>` or `## <next>`.
 - Install/re-install from an immutable tag/ref (for example `v1.2.3`) rather than a moving branch.
