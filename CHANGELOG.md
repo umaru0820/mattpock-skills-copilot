@@ -1,4 +1,4 @@
-## v1.0.0 - 2026-06-19
+## v1.0.0
 
 Initial Copilot-adapted baseline for this repository fork.
 
@@ -34,3 +34,6 @@ Initial Copilot-adapted baseline for this repository fork.
 ### Notes
 
 - This changelog is reset for this adapted repository line and does not track upstream `mattpocock/skills` release history.
+
+## v1.0.1
+- Test release (this will be deleted)
