@@ -44,3 +44,7 @@ Initial Copilot-adapted baseline for this repository fork.
 - Further clean up some of the skills that are not relevant now.
 - Change some naming convention. Example: `.scratch/` to `.tasks/` instead.
 - Why? Instead install to VS Code out of the box as plugin, manually copy `/skills` to working code project's `.github/skills` folder so the skills works more natively instead of living behind `.vscode/` folder.
+
+## v2.1.0
+- new skill `hydrate-project-context` added to build real project context from code after setup-matt-pocock-skills scaffold exists.
+- minor fix to `implement` skill
