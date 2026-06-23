@@ -31,7 +31,7 @@ Look at the current repo to understand its starting state. Read whatever exists;
 - Existing AI instruction or prompt files anywhere in the repo
 - Existing issue workflow docs and label docs
 - Existing context docs and ADR docs in any legacy location
-- `.scratch/` — sign that a local-markdown issue tracker convention is already in use
+- `.tasks/` — sign that a local-markdown issue tracker convention is already in use
 
 Summarize findings first:
 
@@ -48,13 +48,13 @@ Assume the user does not know what these terms mean. Each section starts with a 
 
 **Section A — Issue tracker.**
 
-> Explainer: The "issue tracker" is where issues live for this repo. Skills like `to-issues`, `triage`, `to-prd`, and `qa` read from and write to it — they need to know whether to call `gh issue create`, write a markdown file under `.scratch/`, or follow some other workflow you describe. Pick the place you actually track work for this repo.
+> Explainer: The "issue tracker" is where issues live for this repo. Skills like `to-issues`, `triage`, `to-prd`, and `qa` read from and write to it — they need to know whether to call `gh issue create`, write a markdown file under `.tasks/`, or follow some other workflow you describe. Pick the place you actually track work for this repo.
 
 Default posture: these skills were designed for GitHub. If a `git remote` points at GitHub, propose that. If a `git remote` points at GitLab (`gitlab.com` or a self-hosted host), propose GitLab. Otherwise (or if the user prefers), offer:
 
 - **GitHub** — issues live in the repo's GitHub Issues (uses the `gh` CLI)
 - **GitLab** — issues live in the repo's GitLab Issues (uses the [`glab`](https://gitlab.com/gitlab-org/cli) CLI)
-- **Local markdown** — issues live as files under `.scratch/<feature>/` in this repo (good for solo projects or repos without a remote)
+- **Local markdown** — issues live as files under `.tasks/<feature>/` in this repo (good for solo projects or repos without a remote)
 - **Other** (Jira, Linear, etc.) — ask the user to describe the workflow in one paragraph; the skill will record it as freeform prose
 
 If — and only if — the user picked **GitHub** or **GitLab**, ask one follow-up:
@@ -98,7 +98,7 @@ Show the user a draft of:
 - `.github/ai/triage-labels.md`
 - `.github/context/context-map.md`
 - `.github/context/shared-context.md`
-- `.github/adr/0001-context-document-structure.md`
+- `.github/adr/0000-context-document-structure.md`
 
 Let them edit before writing.
 
@@ -119,7 +119,7 @@ Create or update this structure:
 		context-map.md
 		shared-context.md
 	adr/
-		0001-context-document-structure.md
+		0000-context-document-structure.md
 ```
 
 Rules:
@@ -142,7 +142,7 @@ Use seed templates in this skill folder as the starting point:
 - [triage-labels.md](./triage-labels.md) — `.github/ai/triage-labels.md`
 - [context-map.md](./context-map.md) — `.github/context/context-map.md`
 - [shared-context.md](./shared-context.md) — `.github/context/shared-context.md`
-- [adr-0001-context-document-structure.md](./adr-0001-context-document-structure.md) — `.github/adr/0001-context-document-structure.md`
+- [adr-0000-context-document-structure.md](./adr-0000-context-document-structure.md) — `.github/adr/0000-context-document-structure.md`
 
 For "other" issue trackers, write `.github/ai/issue-tracker.md` from scratch using the user's description.
 

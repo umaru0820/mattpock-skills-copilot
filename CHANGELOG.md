@@ -14,7 +14,7 @@ Initial Copilot-adapted baseline for this repository fork.
   - `.github/ai/triage-labels.md`
   - `.github/context/context-map.md`
   - `.github/context/shared-context.md`
-  - `.github/adr/0001-context-document-structure.md`
+  - `.github/adr/0000-context-document-structure.md`
 - Updated core engineering skills to prefer explicit `.github` paths for context and ADR consumption.
 - Standardized terminology to explicitly reference `.github/context/shared-context.md` instead of ambiguous labels.
 
@@ -38,3 +38,9 @@ Initial Copilot-adapted baseline for this repository fork.
 ## v1.0.1
 - Versioning with **Github Actions** via **semsev** convention.
 - Released version (Eg. v.1.2.3) is saved to **Github Tags**.
+
+## v2.0.0
+- Flatten all skill to `skills/ folder.
+- Further clean up some of the skills that are not relevant now.
+- Change some naming convention. Example: `.scratch/` to `.tasks/` instead.
+- Why? Instead install to VS Code out of the box as plugin, manually copy `/skills` to working code project's `.github/skills` folder so the skills works more natively instead of living behind `.vscode/` folder.

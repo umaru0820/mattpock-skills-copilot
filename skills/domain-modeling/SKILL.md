@@ -16,7 +16,6 @@ Most repos use `.github/context/shared-context.md`:
 └── .github/
 	├── context/
 	│   ├── shared-context.md
-	│   └── context-map.md
 	└── adr/
 		├── 0001-event-sourced-orders.md
 		└── 0002-postgres-for-write-model.md

@@ -28,12 +28,12 @@ Recommended layout:
         agent-workflow.md
     context/
         shared-context.md
-        context-map.md
+        context-map.md             (optional)
         design-system-context.md   (optional)
         app-shell-context.md       (optional)
         forms-context.md           (optional)
     adr/
-        0001-context-document-structure.md
+        0000-context-document-structure.md
 ```
 
 ## Use glossary vocabulary
